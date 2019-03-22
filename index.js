@@ -28,18 +28,18 @@ shuffle = function(array) {
 
 var diasDeterminados = [6];
 
-y_i = 2018;
+y_i = 2019;
 m_i = 2; // 0 = jan, 1 = fev, 2 = mar, ...
 d_i = 6;
 var diaInicial = new Date(y_i, m_i, d_i);
 
-y_f = 2018;
-m_f = 12;
+y_f = 2019;
+m_f = 11;
 d_f = 30;
 
 var diaFinal = new Date(y_f, m_f, d_f);
 
-var nomes_candidatos = ["Ana", "Bianca", "Charles", "Diogo", "Eduarda"]
+var nomes_candidatos = ["Alinne", "Ivanez", "Bianca", "Dilma", "Sueny", "Keroli", "Maely", "Havany"]
 
 var modalidade = "revezamento";  // revezamento, aleatorio, ...
 var nomes_ordem = shuffle(nomes_candidatos);
