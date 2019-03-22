@@ -41,8 +41,14 @@ var diaFinal = new Date(y_f, m_f, d_f);
 
 var nomes_candidatos = ["Alinne", "Ivanez", "Bianca", "Dilma", "Sueny", "Keroli", "Maely", "Havany"]
 
+var shuffle_candidatos = false;
+
 var modalidade = "revezamento";  // revezamento, aleatorio, ...
-var nomes_ordem = shuffle(nomes_candidatos);
+
+if(shuffle_candidatos){
+    var nomes_ordem = shuffle(nomes_candidatos);
+}
+var nomes_ordem = nomes_candidatos;
 
 pegaDiasEscolhidos = function(dDate1, dDate2, dDiasDeterminados) {
     if (dDate1 > dDate2) return false;
