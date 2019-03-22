@@ -70,6 +70,8 @@ var diasEscolhidos = pegaDiasEscolhidos(diaInicial, diaFinal, diasDeterminados);
 
 var contador = 0;
 
+var last_month = diasEscolhidos[0].getMonth();
+
 diasEscolhidos.forEach(function(o, i){
     if(modalidade == "revezamento"){
         nome_escolhido = nomes_ordem[contador];
@@ -79,7 +81,11 @@ diasEscolhidos.forEach(function(o, i){
             contador += 1;
         }
     }
+    if(o.getMonth() != last_month){
+        console.log("");
+    }
     console.log(dateToString(o) + " - " + nome_escolhido);
+    last_month = o.getMonth();
 });
 
 
